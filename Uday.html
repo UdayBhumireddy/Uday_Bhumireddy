@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uday's Portfolio</title>
+    <link rel="stylesheet" href="Uday.css">
+    <link rel="icon" href="uday_favicon.png" type="image/x-icon">
+    <script>
+        function Profile(){
+            let content =`<profile>
+            <div class="profile-pic">
+                <img src="Uday.jpg" alt="Profile Picture of Sai Uday Reddy Bhumireddy">
+            </div>
+            <h1>Sai Uday Reddy Bhumireddy</h1>
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sai-uday-reddy-bhumireddy-35207a164">LinkedIn</a>
+                <span>|</span>
+                <p>Ph: 405-548-7441</p>
+                <span>|</span>
+                <p>Email: <a href="mailto:udaybhumireddy0@gmail.com">udaybhumireddy0@gmail.com</a></p>
+            </div>
+        </profile>
+
+        <basicInfo>
+            <section class="about">
+                <h2>About Me</h2>
+                <p>I am a passionate tech enthusiast and data-driven professional with a strong background in Data Science and Analytics, 
+                    currently pursuing a Master’s degree in this dynamic field. My expertise spans a diverse array of technologies, 
+                    including DBMS, Big Data, C++, Java, Python, and various database systems, which enables me to tackle complex 
+                    problems and develop innovative solutions. With hands-on experience in full-stack development and data analysis, 
+                    I have successfully optimized performance and enhanced user engagement through the creation of multiple visual reports 
+                    using SQL and Power BI. My proactive approach to learning is reflected in my active participation in Kaggle competitions 
+                    and pursuit of SQL certifications, which further sharpen my skills. I am dedicated to leveraging data to generate impactful 
+                    insights and solutions that drive efficiency and transparency, and I thrive on the challenge of transforming intricate data 
+                    into actionable strategies that contribute to organizational success.</p>
+            </section>
+            <br>
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Programming Languages:</strong> Python, C++, Java, C</li>
+                    <li><strong>Data Management:</strong> PostgreSQL, SQL, NoSQL, MongoDB, Data Visualization (Power BI, Tableau), Data Analysis</li>
+                    <li><strong>Project Management Tools:</strong> MS Project, Excel (Pivot Tables, Power Query, Macros), JIRA</li>
+                    <li><strong>Software Development:</strong> HTML, CSS, JavaScript, PHP, AJAX</li>
+                    <li><strong>Data Science & Analytics:</strong> Hadoop, Spark Scala, R, MATLAB, Machine Learning</li>
+                    <li><strong>Process Automation:</strong> Python development for process automation, SQL Query Optimization</li>
+                    <li><strong>PC Architecture:</strong> Knowledge of PC systems and architecture</li>
+                </ul>
+            </section>
+        </basicInfo>`;
+            document.getElementById("container").innerHTML = content;
+        }
+        
+        function Projects(){
+            let content =`<section class="projects">
+            <h2>Projects</h2>
+            
+                <div class ='project-box'><strong>Enhancing SQLite's Indexing:</strong> Developed and integrated GIN and BRIN Indexing techniques into SQLite, assessing efficiency and scalability compared to existing methods.</div>
+                <div class ='project-box'><strong>Movie Archiving System:</strong> Designed and developed "The Movie Database" utilizing MongoDB across distributed sites for continuous availability. 
+                    Implemented key functionalities including data insertion, retrieval, and fault-tolerant replication schemes. Successfully ensured 
+                    seamless access to movie information while adhering to academic integrity guidelines.</div>
+                <div class ='project-box'><strong>Cancer Prediction Model:</strong> Developed a heart cancer prediction system utilizing machine learning techniques and the renowned Framingham Heart Study 
+                    dataset. Integrated ensemble modelling methods like Random Forest, achieving an impressive accuracy of 97.68%. Managed the 
+                    entire project lifecycle from data preprocessing to model evaluation, resulting in a robust predictive tool poised to enhance
+                    healthcare outcomes.</div>
+                <div class ='project-box'><strong>Job-shop Accounting System:</strong> Developed and implemented a accounting system for manufacturing assemblies in accordance with specified requirements and 
+                    provided information. Successfully devised the schema diagram and relation schema, subsequently translating them into tables.
+                    Implemented necessary indexes on these tables, considering their frequency and usage types. Created a Web database application 
+                    utilizing Azure SQL Database and Java Server Pages (JSP). This application was intricately designed to interact with the Azure 
+                    SQL Database through the Java Database Connectivity (JDBC) framework. Efficiently executed various database operations 
+                    through the integration of stored procedures.</div>
+        </section>`;
+            document.getElementById("container").innerHTML = content;
+        }
+
+        function Experience(){
+            let content =`<section class="experience">
+            <h2>Experience</h2>
+            <div class='experience-box'>
+            <div class='experience-company'>
+            <img src="Sam_Nobel.jpeg" alt="Sam Nobel Museum Of Natural History Symbol">
+            <h3>Full-stack Developer & Database Manager - Sam Noble Oklahoma Museum Of Natural History | (Jun 2024 - Dec 2024)</h3>
+            </div>
+            <ul>
+                <li>Developed dynamic web applications for multiple museum department collections, enhancing user engagement.</li>
+                <li>Optimized SQL database performance through stored procedures and automated job scheduling.</li>
+                <li>Collaborated with stakeholders to analyze requirements and deliver custom web solutions.</li>
+            </ul>
+            </div>
+            <div class='experience-box'>
+            <div class='experience-company'>
+            <img src="Infosys.jpg" alt="Infosys Symbol">
+            <h3>Data Analyst - Infosys | (Jan 2021 - Jun 2022)</h3>
+            </div>
+            <ul>
+                <li>Produced comprehensive PowerBI reports to enhance operational transparency and decision-making.</li>
+                <li>Reduced query run time by 93% through advanced query optimization techniques.</li>
+                <li>Developed logical frameworks for data fields and authored detailed documentation.</li>
+            </ul>
+            </div>
+        </section>`;
+            document.getElementById("container").innerHTML = content;
+        }
+
+        function Education(){
+            let content =`<section class="education">
+            <h2>Education</h2>
+            <div class='education-box'>
+            <div class='education-college'>
+            <img src="OU.png" alt="University Of Oklahoma Symbol">
+            <h3>Master of Science - University of Oklahoma, Norman, OK, USA</h3>
+            </div>
+            <p>Major in Data Science and Analytics (Jan 2023 - Dec 2024)</p>
+            <p>GPA: 3.91</p>
+            </div>
+            <div class='education-box'>
+            <div class='education-college'>
+            <img src="SRMIST.jpg" alt="SRM Institute Of Science & Technology Symbol">
+            <h3>Bachelors in SRM Institute Of Science & Technology, Chennai,India</h3>
+            </div>
+            <p>Bachelors in Electrical & Electronics Engineering (July-2016 to June-2020)</p>
+            <p>Percentage: 76.07</p>
+            </div>
+
+        </section>`;
+            document.getElementById("container").innerHTML = content;
+        }
+
+        function Others(){
+            let content =`<section class="others">
+            <h2>Certifications & Achievements</h2>
+            <ul>
+                <li>Certified in Advanced SQL by HackerRank. | <a href='https://www.hackerrank.com/certificates/iframe/344728158877'>View Certificate</a></li>
+                <li>1st Place in Kaggle Competition for revenue prediction using advanced data analysis and predictive modeling.</li>
+            </ul>
+        </section>`;
+            document.getElementById("container").innerHTML = content;
+        }
+    </script>
+</head>
+<body>
+    <homebar>
+        <button onclick="Profile();" autofocus>Profile</button>
+        <button onclick="Projects();">Projects</button>
+        <button onclick="Experience();">Experience</button>
+        <button onclick="Education();">Education</button>
+        <button onclick="Others();">Certifications & Achievements</button>
+    </homebar>
+    
+    <div class="container" id="container">
+        <profile>
+            <div class="profile-pic">
+                <img src="Uday.jpg" alt="Profile Picture of Sai Uday Reddy Bhumireddy">
+            </div>
+            <h1>Sai Uday Reddy Bhumireddy</h1>
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sai-uday-reddy-bhumireddy-35207a164">LinkedIn</a>
+                <span>|</span>
+                <p>Ph: 405-548-7441</p>
+                <span>|</span>
+                <p>Email: <a href="mailto:udaybhumireddy0@gmail.com">udaybhumireddy0@gmail.com</a></p>
+            </div>
+        </profile>
+
+        <basicInfo>
+            <section class="about">
+                <h2>About Me</h2>
+                <p>I am a passionate tech enthusiast and data-driven professional with a strong background in Data Science and Analytics, 
+                    currently pursuing a Master’s degree in this dynamic field. My expertise spans a diverse array of technologies, 
+                    including DBMS, Big Data, C++, Java, Python, and various database systems, which enables me to tackle complex 
+                    problems and develop innovative solutions. With hands-on experience in full-stack development and data analysis, 
+                    I have successfully optimized performance and enhanced user engagement through the creation of multiple visual reports 
+                    using SQL and Power BI. My proactive approach to learning is reflected in my active participation in Kaggle competitions 
+                    and pursuit of SQL certifications, which further sharpen my skills. I am dedicated to leveraging data to generate impactful 
+                    insights and solutions that drive efficiency and transparency, and I thrive on the challenge of transforming intricate data 
+                    into actionable strategies that contribute to organizational success.</p>
+            </section>
+            <br>
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Programming Languages:</strong> Python, C++, Java, C</li>
+                    <li><strong>Data Management:</strong> PostgreSQL, SQL, NoSQL, MongoDB, Data Visualization (Power BI, Tableau), Data Analysis</li>
+                    <li><strong>Project Management Tools:</strong> MS Project, Excel (Pivot Tables, Power Query, Macros), JIRA</li>
+                    <li><strong>Software Development:</strong> HTML, CSS, JavaScript, PHP, AJAX</li>
+                    <li><strong>Data Science & Analytics:</strong> Hadoop, Spark Scala, R, MATLAB, Machine Learning</li>
+                    <li><strong>Process Automation:</strong> Python development for process automation, SQL Query Optimization</li>
+                    <li><strong>PC Architecture:</strong> Knowledge of PC systems and architecture</li>
+                </ul>
+            </section>
+        </basicInfo>
+    </div>
+</body>
+</html>
